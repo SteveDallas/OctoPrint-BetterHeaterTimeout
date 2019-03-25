@@ -47,7 +47,6 @@ class BetterHeaterTimeoutPlugin(
 									.split("\n"))
 
 							send_gcode_lines("before_gcode");
-							self._printer.set_temperature(key, 0);
 							payload = dict(
 								heater=key,
 								time_elapsed=time_elapsed,
